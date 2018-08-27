@@ -1,13 +1,17 @@
+/* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:100');
 @import url('https://fonts.googleapis.com/css?family=Jim+Nightshade');
 
+
+/* Firefox Desktop prefix*/
 @-moz-document url-prefix() {
     .album__tracks li {
         margin-top: -10px;
     }
 }
 
+/* Desktop version */
 html {
     scroll-behavior: smooth;
 }
@@ -178,6 +182,7 @@ h2 {
     max-width: 150px;
 }
 
+/* Mobile version (tested on 720p)*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 360px){
     
     .menu__item a {
@@ -230,6 +235,7 @@ h2 {
     }
 }
 
+/* Mobile version (tested on 1080p)*/
 @media only screen and (min-device-width: 361px) and (max-device-width: 900px){
     
     .menu__item a {
