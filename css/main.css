@@ -213,6 +213,15 @@ h2 {
         padding-bottom: 15px;
     }
 
+    .tour {
+        background: #cbb79e;
+        background-image: url('../img/tour.jpg');
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        padding-bottom: 0px;
+    }
+
     .tour__table {
         font-size: 18px;
     }
@@ -280,6 +289,15 @@ h2 {
 
     .video {
         padding-bottom: 20px;
+    }
+
+    .tour {
+        background: #cbb79e;
+        background-image: url('../img/tour.jpg');
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        padding-bottom: 0px;
     }
 
     .tour__table {
