@@ -128,11 +128,9 @@ h2 {
 }
 
 .tour {
-    background: #ffdaae;
     background-image: url('../img/tour.jpg');
     background-size: cover;
     background-position: bottom;
-    color: #e3dbad;
     padding-bottom: 10px;  
 }
 
@@ -142,31 +140,32 @@ h2 {
     box-shadow: 10px 0 0px 0px #000000, -10px 0 0px 0px #000000;
 }
 
-.tour__event {
-    margin-bottom: 15px;
+.tour__table {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+}
+
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-color: transparent;
     background: rgba(0, 0, 0, 0.2);
     color: #e3dbad;
-    height: 80px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px; 
 }
 
-.tour__event:hover {
-    background: rgba(0, 0, 0, 0.4);
-    border-bottom: 2px solid #ffdaae;
-    height: 80px;
-    font-size: 28px;
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #000000;
+    background: transparent;
+    color: #000000;
+    text-shadow: 1px 1px #e3dbad;
+    font-size: 26px;
 }
 
-.tour__event-date {
+.table-hover thead tr:hover th, .table-hover tbody tr:hover td {
+    border-bottom: 1px solid #ffdaae;
     color: #ffdaae;
-}
-
-.tour__event-place {
-    display: block;
-    text-align: right;
-    color: #e3dbad;
-    padding-bottom: 5px;
+    text-shadow: none;
 }
 
 .footer {
@@ -214,17 +213,14 @@ h2 {
         padding-bottom: 15px;
     }
 
-    .tour__event {
-        margin-bottom: 5px;
-        height: 70px;
-        font-size: 18px; 
+    .tour__table {
+        font-size: 18px;
     }
-    
-    .tour__event:hover {
-        border-bottom: 2px solid #ffdaae;
+
+    .table thead th {
         font-size: 20px;
     }
-       
+         
     .footer {
         height: 120px;
     }
@@ -233,11 +229,34 @@ h2 {
         padding-top: 5px;
         max-width: 120px;
     }
+
+    .animated {
+        /*CSS3 animation properties*/
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+
+        /*CSS3 transition properties*/
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+
+        /*CSS3 transform properties*/
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+    }
 }
 
-/* Mobile version (tested on 1080p)*/
+/* Mobile version (tested on 1080p) */
 @media only screen and (min-device-width: 361px) and (max-device-width: 900px){
-    
+  
     .menu__item a {
         font-size: 24px;
     }
@@ -263,15 +282,34 @@ h2 {
         padding-bottom: 20px;
     }
 
-    .tour__event {
-        margin-bottom: 5px;
-        height: 70px;
-        font-size: 18px; 
-    }
-    
-    .tour__event:hover {
-        border-bottom: 2px solid #ffdaae;
+    .tour__table {
         font-size: 20px;
     }
- 
+
+    .table thead th {
+        font-size: 22px;
+    }
+
+    .animated {
+        /*CSS3 animation properties*/
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+
+        /*CSS3 transition properties*/
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+
+        /*CSS3 transform properties*/
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+    }
 }
