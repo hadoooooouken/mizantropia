@@ -17,7 +17,7 @@ html {
 
 body {
     font-family: 'Fira Sans', sans-serif;
-        background: #000000;
+    background: #000000;
 }
 
 a {
@@ -216,6 +216,11 @@ h2 {
     }
 
     .tour {
+        background: #ad9f8e;
+        background-image: url('../img/tour.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
         padding-bottom: 0px;
     }
 
@@ -267,6 +272,11 @@ h2 {
     }
 
     .tour {
+        background: #ad9f8e;
+        background-image: url('../img/tour.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
         padding-bottom: 0px;
     }
 
