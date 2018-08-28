@@ -128,10 +128,12 @@ h2 {
 }
 
 .tour {
+    background: #cbb79e;
     background-image: url('../img/tour.jpg');
-    background-size: cover;
+    background-size: contain;
     background-position: bottom;
-    padding-bottom: 10px;  
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
 }
 
 .tour h2 span{
@@ -214,11 +216,6 @@ h2 {
     }
 
     .tour {
-        background: #cbb79e;
-        background-image: url('../img/tour.jpg');
-        background-size: contain;
-        background-position: bottom;
-        background-repeat: no-repeat;
         padding-bottom: 0px;
     }
 
@@ -292,11 +289,6 @@ h2 {
     }
 
     .tour {
-        background: #cbb79e;
-        background-image: url('../img/tour.jpg');
-        background-size: contain;
-        background-position: bottom;
-        background-repeat: no-repeat;
         padding-bottom: 0px;
     }
 
