@@ -314,6 +314,11 @@ h2 {
         padding-bottom: 15px;
     }
 
+    .music, .music a {
+        font-size: 1.2em;
+        float: left !important;
+    }
+
     .tour {
         background: #ad9f8e;
         background-image: url('../img/tour.jpg');
