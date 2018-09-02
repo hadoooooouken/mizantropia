@@ -207,7 +207,7 @@ h2 {
 
 .tour {
     background: #cbb79e;
-    background-image: url('../img/tour.jpg');
+    background-image: url('../img/band.jpg');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -325,14 +325,19 @@ h2 {
         padding-bottom: 15px;
     }
 
-    .music, .music a {
-        font-size: 1.2em;
-        float: left !important;
+    .contact__links {
+        font-size: 1rem;
+        line-height: 3em;
+    }
+
+    .music__links {
+        font-size: 1.1rem;
+        line-height: 3em;
     }
 
     .tour {
         background: #ad9f8e;
-        background-image: url('../img/tour.jpg');
+        background-image: url('../img/band.jpg');
         background-repeat: no-repeat;
         background-size: contain;
         background-position: bottom;
@@ -387,9 +392,19 @@ h2 {
         padding-bottom: 20px;
     }
 
+    .contact__links {
+        font-size: 1.1rem;
+        line-height: 3em;
+    }
+
+    .music__links {
+        font-size: 1.1rem;
+        line-height: 3em;
+    }
+
     .tour {
         background: #ad9f8e;
-        background-image: url('../img/tour.jpg');
+        background-image: url('../img/band.jpg');
         background-repeat: no-repeat;
         background-size: contain;
         background-position: bottom;
