@@ -210,11 +210,6 @@ h2 {
   padding-bottom: 30px;
 }
 
-.music a {
-  font-size: 1.5em;
-  word-spacing: 0.2em;
-}
-
 .tour {
   background: #cbb79e;
   background-image: url("../img/tour.jpg");
@@ -267,6 +262,17 @@ h2 {
 }
 
 .contact__links a:hover {
+  color: #e3dbad;
+  text-decoration: none;
+}
+
+.music__links a {
+  font-family: sans-serif;
+  color: #c1a584;
+  line-height: 2em;
+}
+
+.music__links a:hover {
   color: #e3dbad;
   text-decoration: none;
 }
