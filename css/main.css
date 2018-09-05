@@ -1,10 +1,26 @@
+@import url(d:\wampserver\www\github\mizantropia\libs\normalize.css);
 /* main color  default #000000 */
 /* accent color 1 default #e3dbad */
 /* accent color 2 default #c1a584 */
 /* table tour hover color default #ffdaae*/
-@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
-@import url("https://fonts.googleapis.com/css?family=Fira+Sans:100");
-@import url("https://fonts.googleapis.com/css?family=Jim+Nightshade");
+@font-face {
+  font-family: 'montfont';
+  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'firafont';
+  src: url("../fonts/FiraSans-Thin.ttf") format("truetype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'jimfont';
+  src: url("../fonts/JimNightshade-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
 /* Firefox Desktop prefix*/
 @-moz-document url-prefix() {
   .album__tracks li {
@@ -50,12 +66,50 @@ a {
   transition: all 0.3s ease;
 }
 
-/* Desktop version */
+/* Main CSS Specification */
 html {
   scroll-behavior: smooth;
 }
 
 body {
   background: #000000;
+  color: #e3dbad;
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: red;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  border-top: 10px solid #e3dbad;
+}
+
+nav a {
+  font-size: 1.5em;
+  font-family: "montfont", sans-serif;
+  font-weight: 700;
+  color: #c1a584;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: #e3dbad;
 }
 /*# sourceMappingURL=main.css.map */

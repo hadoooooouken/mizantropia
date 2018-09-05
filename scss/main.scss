@@ -1,15 +1,54 @@
-@import 'colors';
+@import "../libs/normalize.css";
+@import 'vars';
 @import 'fonts';
 @import 'prefixes';
 @import 'animations';  
 
-/* Desktop version */
+/* Main CSS Specification */
 html {
     scroll-behavior: smooth;
 }
 
 body {
     background: $mc;
+    color: $ac1;
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: red;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    border-top: 10px solid $ac1;
+}
+
+nav a {
+    font-size: 1.5em;
+    font-family: $montfont;
+    font-weight: 700;
+    color: $ac2;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+nav a:hover {
+    color: $ac1;
 }
 
 @import 'media';

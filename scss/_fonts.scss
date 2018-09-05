@@ -1,3 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100');
-@import url('https://fonts.googleapis.com/css?family=Jim+Nightshade');
+@font-face {
+    font-family: 'montfont';
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'firafont';
+    src: url('../fonts/FiraSans-Thin.ttf') format('truetype');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'jimfont';
+    src: url('../fonts/JimNightshade-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
