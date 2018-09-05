@@ -1,0 +1,6 @@
+/* Firefox Desktop prefix*/
+  @-moz-document url-prefix() {
+    .album__tracks li {
+        margin-top: -10px;
+    }
+}
