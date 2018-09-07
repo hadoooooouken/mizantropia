@@ -1,10 +1,14 @@
-@import "../libs/normalize.css";
 @import 'vars';
 @import 'fonts';
-@import 'prefixes';
-@import 'animations';  
 
-/* Main CSS Specification */
+/* Crutches */
+
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -13,42 +17,234 @@ body {
     background: $mc;
     color: $ac1;
     font-size: 16px;
-    margin: 0 auto;
 }
 
-.grid {
-    display: grid;
+.flex {
+    display: flex;
+    justify-content: center;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+/* Main navigation */
 
 nav {
-    background: red;
-    height: 70px;
+    align-items: center;
+    background: $mc;
+    min-height: 90px;
     position: fixed;
     top: 0;
-    right: 0;
-    left: 0;
+    width: 100%;
     z-index: 1030;
-    border-top: 10px solid $ac1;
+    border-top: 10px solid $mc;
+    border-bottom: 1px solid $mc;
+    border-image: linear-gradient(90deg, $mc, $ac2, $mc) 30;
+    word-spacing: 1em;
+    padding: 0 20% 0 20%;   /*************************************/
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.75);
+
+    img {
+        max-width: 70px;
+        max-height: 70px;
+    }
+
+    a {
+        font-size: 1.5em;
+        font-family: $montfont;
+        font-weight: 700;
+        color: $ac2;
+        text-decoration: none;
+        text-transform: uppercase;
+    
+            &:hover {
+                color: $ac1;
+            }
+            
+            &:active {
+            color: transparent;
+            text-shadow: 1px 1px 2px $ac1 !important;
+            background-clip: text;
+            }
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        display: inline;
+        line-height: 1.5;
+    }
 }
 
-nav a {
+.nav__menu,
+.nav__socials {
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__menu {
+    margin-left: 1em;
+}
+
+.nav__socials {
+    margin-left: auto;
+    font-family: $fontello;
+}
+
+/* About new album */
+
+header {
+    background-image: url("../img/album_background.jpg");
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 90px;
+
+    h1 {
+        font-family: $montfont;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1.8em;
+        padding-bottom: 1em;
+    }
+}
+
+.header__album-title {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.header__album-cover {
+    margin-bottom: 2em;
+    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.75);
+}
+
+.header__album-tracks {
+    font-family: $jimfont;
     font-size: 1.5em;
-    font-family: $montfont;
-    font-weight: 700;
     color: $ac2;
-    text-decoration: none;
+    margin-left: 2em;
+    line-height: 1;
+    margin-top: -10; /************************************/
+}
+
+/* Videos section */
+
+.videos h1 {
+    font-family: $firafont;
+    font-weight: 100;
+    font-size: 2.4em;
+    color: $ac2;
     text-transform: uppercase;
-
+    text-align: center;
+    padding-top: 0.5em;
 }
 
-nav a:hover {
-    color: $ac1;
+.videos__embed-responsive {
+    position: relative;
+    display: block;
+    width: 60%; /************************************************/
+    padding: 0;
+    overflow: hidden;
+    margin: auto;
+}
+  
+.videos__embed-responsive::before {
+    display: block;
+    content: "";
+}
+  
+.videos__embed-responsive .videos__embed-responsive-item,
+.videos__embed-responsive iframe,
+.videos__embed-responsive embed,
+.videos__embed-responsive object,
+.videos__embed-responsive video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 1em 0 1em 0; /**********************************************/
+}
+  
+.videos__embed-responsive-16by9::before {
+    padding-top: 56.25%;
+}
+  
+.footer {
+    align-items: center;
+    flex-direction: column;
+    font-family: $firafont;
+    font-size: 1.2em;
+    color: $ac2;
+
+    img {
+        max-width: 70px;
+        max-height: 70px;
+    }
 }
 
+.footer__date {
+    padding-bottom: 1em; 
+}
+
+/* Band section - members */
+
+.band {
+    background: $ac2;
+
+    h1 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 2.4em;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+    }
+
+    span {
+    font-family: $firafont;
+    color: $ac2;
+    background: $mc;
+    }
+    
+}
+
+.band__all {
+    padding: 0 20% 0 20%; /*************************/
+    flex-basis: 200px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.band__member {
+    flex-direction: column;
+    font-family: $montfont;
+    font-size: 1.5em;
+    color: $mc;
+    text-align: left;
+    margin-bottom: 1em;
+
+    &:last-child {
+        
+    }
+    
+    img {
+    width: 100%;
+    border-radius: 50%;
+    border: 2px inset $ac1;
+    margin-bottom: 0.5em;
+    filter: grayscale(80%) brightness(0.6);
+
+        &:hover {
+        filter: grayscale(0%);
+        }
+    }
+}
+
+@import 'crutches';
+@import 'animations';
 @import 'media';

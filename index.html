@@ -4,17 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Grid CSS</title>
+    <title>flexbox</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.min.css">
 
 </head>
-
 <body>
-    <nav id="nav" class="nav grid">
-        <a href="#video">Videos</a>
-        <a data-toggle="modal" data-target="#musicModalCenter" href="#music">Music</a>
-        <a href="#tour">Tour</a>
-        <a data-toggle="modal" data-target="#contactModalCenter" href="#contact">Contact</a>
+
+    <nav id="nav" class="nav flex">
+        <div class="nav__logo">
+            <a href="javascript:scroll(0,0)"><img src="img/logo.png" alt="Mizantropia"></a>
+        </div>
+        <div class="nav__menu">
+            <ul>
+                <li><a href="#videos">Videos</a></li>
+                <li><a data-toggle="modal" data-target="#musicModalCenter" href="#music">Music</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a data-toggle="modal" data-target="#contactModalCenter" href="#contact">Contact</a></li>
+            </ul>    
+        </div>
+        <div class="nav__socials">
+            <ul>
+                <li><a href="https://www.facebook.com/pages/biz/Mizantropia-130594892316/" target="_blank"><i class="icon-facebook-squared"></i></a></li>
+                <li><a href="https://www.instagram.com/mizantropia.band/" target="_blank"><i class="icon-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCH4OewcjOmyrHXPakFrOi2w" target="_blank"><i class="icon-youtube-play"></i></a></li>
+            </ul>    
+        </div>
     </nav>
+
+    <header id="header" class="header">
+        <img class="header__album-title" src="img/album_logo.png" alt="Mizantropia | Out Of Mind">
+        <h1 class="fadeInLeft">New album available now</h1>
+        <div class="header__album flex">    
+            <div class="header__album-cover">
+                <img src="img/album_cover.jpg" alt="Out Of Mind">
+            </div>
+            <div class="header__album-tracks">
+                <ol>
+                    <li>My Forgotten Sins</li>
+                    <li>Act Of Freedom</li>
+                    <li>Out Of Mind</li>
+                    <li>Along The Lonesome Alleys</li>
+                    <li>To Love Forever</li>
+                    <li>Don't Forget</li>
+                    <li>Nowhere</li>
+                    <li>My Wisdom</li>
+                    <li>Vengeance</li>
+                    <li>Kilometers</li>
+                    <li>Black Idol</li>
+                </ol>
+            </div>
+        </div>
+    </header>
+    <hr>
+    
+    <section id="videos" class="videos">
+        <h1>Chekout the full album</h1>
+        <div class="videos__embed-responsive videos__embed-responsive-16by9">
+            <iframe class="videos__embed-responsive-item" src="https://www.youtube.com/embed/NkdNIV3DLQg" allowfullscreen></iframe>
+        </div>
+        <hr>
+        <h1>Chekout the new single - Black idol</h1>
+        <div class="videos__embed-responsive videos__embed-responsive-16by9">
+            <iframe class="videos__embed-responsive-item" src="https://www.youtube.com/embed/XPqnXUk1FGI" allowfullscreen></iframe>
+        </div>
+    </section>
+    
+    <section id="band" class="band"><hr>
+        <h1><span>Band members</span></h1>
+        <div class="band__all flex">
+            <div class="band__member flex">
+                <img src="/img/band_member1.jpg" alt="Sergey Yasir">
+                <span>Sergey Yasyr</span>
+                Guitar
+            </div>
+            <div class="band__member flex">
+                <img src="/img/band_member2.jpg" alt="Anastasia Kurchenko">
+                <span>Anastasia Kurchenko</span>
+                Drums
+            </div>
+            <div class="band__member flex">
+                <img src="/img/band_member3.jpg" alt="Evgeniy Suslov">
+                <span>Evgeniy Suslov</span>
+                Guitar
+            </div>
+            <div class="band__member flex">
+                <img src="/img/band_member4.jpg" alt="Maksim Kaplenko">
+                <span>Maksim Kaplenko</span>
+                Bass
+            </div>
+            <div class="band__member flex">
+                <img src="/img/band_member5.jpg" alt="Ekaterina Sinegina">
+                <span>Ekaterina Sinegina</span>
+                Vocal
+            </div>
+            
+        </div>
+    </section>
+
+    <footer id="footer" class="footer flex">
+        <div class="footer__logo">
+            <img src="img/logo.png" alt="Mizantropia 2018">
+        </div>
+        <div class="footer__date">
+            &copy; Mizantropia, 
+            <script type="text/javascript">
+                document.write(new Date().getFullYear());
+            </script>
+        </div>
+    </footer>
+
 </body>
 </html>
