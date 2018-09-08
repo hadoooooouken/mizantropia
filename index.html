@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" prefix="og: http://ogp.me/ns#">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,228 +33,147 @@
     <meta property="og:url" content="https://hadoooooouken.github.io/mizantropia/" />
     <meta property="og:image" content="https://hadoooooouken.github.io/mizantropia/img/favicon.png" />
     <meta property="og:image:type" content="image/png" />
-    <title>Mizantropia</title>
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Mizantropia | Official Site</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </head>
 <body>
+      
+    <nav id="nav" class="nav flex">
+        <div class="nav__logo">
+            <a href="javascript:scroll(0,0)"><img src="img/logo.png" alt="Mizantropia"></a>
+        </div>
+        <div class="nav__menu">
+            <ul>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>    
+        </div>
+        <div class="nav__socials">
+            <ul>
+                <li><a href="https://www.facebook.com/pages/biz/Mizantropia-130594892316/" target="_blank"><i class="icon-facebook-squared"></i></a></li>
+                <li><a href="https://www.instagram.com/mizantropia.band/" target="_blank"><i class="icon-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCH4OewcjOmyrHXPakFrOi2w" target="_blank"><i class="icon-youtube-play"></i></a></li>
+            </ul>    
+        </div>
+    </nav>
 
     <header id="header" class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-4 col-lg-1 offset-4 offset-lg-0">
-                    <a href="javascript:scroll(0,0)"><img src="img/logo.png" alt="Mizantropia" class="logo d-block mx-auto"></a>
-                </div>
-                <div class="col-10 col-lg-11 offset-1 offset-lg-0 text-center">
-                    <nav>
-                        <ul class="menu float-md-left">
-                            <li class="menu__item">
-                                <a href="#video">Videos</a>
-                                <a data-toggle="modal" data-target="#musicModalCenter" href="#music">Music</a>
-                                <a href="#tour">Tour</a>
-                                <a data-toggle="modal" data-target="#contactModalCenter" href="#contact">Contact</a>
-                            </li>
-                        </ul>
-                        <ul class="socials">
-                            <li class="socials__item float-md-right">
-                                <a href="https://www.facebook.com/pages/biz/Mizantropia-130594892316/" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                                <a href="https://www.instagram.com/mizantropia.band/" target="_blank"><i class="fab fa-instagram"></i></a>
-                                <a href="https://www.youtube.com/channel/UCH4OewcjOmyrHXPakFrOi2w" target="_blank"><i class="fab fa-youtube"></i></a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+        <img class="header__album-title" src="img/album_logo.png" alt="Mizantropia | Out Of Mind">
+        <h1 class="fadeInLeft">New album available now</h1>
+        <div class="header__album flex">    
+            <div class="header__album-cover">
+                <img src="img/album_cover.jpg" alt="Out Of Mind">
+            </div>
+            <div class="header__album-tracks">
+                <ol>
+                    <li>My Forgotten Sins</li>
+                    <li>Act Of Freedom</li>
+                    <li>Out Of Mind</li>
+                    <li>Along The Lonesome Alleys</li>
+                    <li>To Love Forever</li>
+                    <li>Don't Forget</li>
+                    <li>Nowhere</li>
+                    <li>My Wisdom</li>
+                    <li>Vengeance</li>
+                    <li>Kilometers</li>
+                    <li>Black Idol</li>
+                </ol>
             </div>
         </div>
     </header>
+    <hr>
     
-    <!-- Modal Contact-->
-    <div class="modal fade" id="contactModalCenter" tabindex="-1" role="dialog" aria-labelledby="contactModalCenterTitle" aria-hidden="true">
-         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title" id="contactModalLongTitle">CONTACT</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+    <section id="videos" class="videos">
+        <h1>Chekout the full album</h1>
+        <div class="videos__embed-responsive videos__embed-responsive-16by9">
+            <iframe class="videos__embed-responsive-item" src="https://www.youtube.com/embed/NkdNIV3DLQg" allowfullscreen></iframe>
+        </div>
+        <hr>
+        <h1>Chekout the new single - Black idol</h1>
+        <div class="videos__embed-responsive videos__embed-responsive-16by9">
+            <iframe class="videos__embed-responsive-item" src="https://www.youtube.com/embed/XPqnXUk1FGI" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="music" class="modal">
+        <div class="modal__content">
+            <div class="modal__heading">
+                Listen to us on
+            </div><hr>
+            <div class="modal__body">
+                <div class="modal__body-music">
+                    <a href="https://itunes.apple.com/us/artist/mizantropia/611275750" target="_blank"><i class="icon-itunes"></i>&nbspiTunes</a>
+                    <a href="https://open.spotify.com/album/7JPNYm0XZDD2etb1YV72IF?nd=1" target="_blank"><i class="icon-spotify"></i>&nbspSpotify</a>
                 </div>
-                <div class="modal-body mx-auto">
-                    <ul class="contact">
-                        <li class="contact__links">
-                            <a href="https://m.me/130594892316" target="_blank"><i class="fab fa-facebook-messenger"></i>&nbspm.me/130594892316</a><br />
-                            <a href="mailto:mizantropia.band@gmail.com"><i class="fa fa-envelope"></i>&nbspmizantropia.band@gmail.com</a><br />
-                            <a href="https://vk.com/mizantropiaband" target="_blank"><i class="fab fa-vk"></i>&nbspvk.com/mizantropiaband</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-primary btn-block" data-dismiss="modal">CLOSE</button>
-                </div>
+            </div>
+            <div class="modal__footer">
+                <a href="#close">CLOSE</a>
             </div>
         </div>
-    </div>
-
-    <section id="album" class="album">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="album__title img-fluid" src="img/album_logo.png" alt="Mizantropia | Out Of Mind">
-                </div>
+    </section>
+    
+    <section id="band" class="band"><hr>
+        <h1><span>Band members</span></h1>
+        <div class="band__all flex">
+            <div class="band__member flex">
+                <img src="img/band_member1.jpg" alt="Sergey Yasir">
+                <span>Sergey Yasyr</span>
+                Guitar
             </div>
-            <div class="row">
-                <div class="col-11 col-lg-6 offset-lg-3 offset-1">
-                    <h1 class="fadeInLeft">New album available now</h1>
-                </div>
+            <div class="band__member flex">
+                <img src="img/band_member2.jpg" alt="Anastasia Kurchenko">
+                <span>Anastasia Kurchenko</span>
+                Drums
             </div>
-            <div class="row">
-                <div class="col-lg-4 offset-0 offset-lg-3">
-                    <img src="img/album_cover.jpg" alt="Out Of Mind" class="album__cover d-block mx-auto">
-                </div>
-                <div class="col-lg-3 offset-1 offset-lg-0 offset-sm-3">
-                    <ol class="album__tracks">
-                        <li>My Forgotten Sins</li>
-                        <li>Act Of Freedom</li>
-                        <li>Out Of Mind</li>
-                        <li>Along The Lonesome Alleys</li>
-                        <li>To Love Forever</li>
-                        <li>Don't Forget</li>
-                        <li>Nowhere</li>
-                        <li>My Wisdom</li>
-                        <li>Vengeance</li>
-                        <li>Kilometers</li>
-                        <li>Black Idol</li>
-                    </ol>
-                </div>
+            <div class="band__member flex">
+                <img src="img/band_member3.jpg" alt="Evgeniy Suslov">
+                <span>Evgeniy Suslov</span>
+                Guitar
+            </div>
+            <div class="band__member flex">
+                <img src="img/band_member4.jpg" alt="Maksim Kaplenko">
+                <span>Maksim Kaplenko</span>
+                Bass
+            </div>
+            <div class="band__member flex">
+                <img src="img/band_member5.jpg" alt="Ekaterina Sinegina">
+                <span>Ekaterina Sinegina</span>
+                Vocal
             </div>
         </div>
     </section>
 
-    <section id="video" class="video">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2  class="fadeInUp">Chekout the full album</h2>
+    <section id="contact" class="modal">
+        <div class="modal__content">
+            <div class="modal__heading">
+                contact
+            </div><hr>
+            <div class="modal__body">
+                <div class="modal__body-contact">
+                    <a href="https://m.me/130594892316" target="_blank"><i class="icon-comment"></i>&nbspm.me/130594892316</a><br />
+                    <a href="mailto:mizantropia.band@gmail.com"><i class="icon-mail-alt"></i>&nbspmizantropia.band@gmail.com</a><br />
+                    <a href="https://vk.com/mizantropiaband" target="_blank"><i class="icon-vkontakte"></i>&nbspvk.com/mizantropiaband</a>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NkdNIV3DLQg" allowfullscreen></iframe>
-                    </div>
-                </div>
+            <div class="modal__footer">
+                <a href="#close">CLOSE</a>
             </div>
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="fadeInUp">Chekout the new single - Black idol</h2>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XPqnXUk1FGI" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>      
         </div>
     </section>
 
-    <!-- Modal Music-->
-    <div class="modal fade" id="musicModalCenter" tabindex="-1" role="dialog" aria-labelledby="musicModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-           <div class="modal-content">
-               <div class="modal-header">
-               <h5 class="modal-title" id="musicModalLongTitle">LISTEN TO US ON</h5>
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                   <span aria-hidden="true">&times;</span>
-               </button>
-               </div>
-               <div class="modal-body mx-auto">
-                   <ul class="music">
-                       <li class="music__links">
-                        <a href="https://itunes.apple.com/us/artist/mizantropia/611275750" target="_blank"><i class="fab fa-itunes"></i>&nbspiTunes</a><br />
-                        <a href="https://open.spotify.com/album/7JPNYm0XZDD2etb1YV72IF?nd=1" target="_blank"><i class="fab fa-spotify"></i>&nbspSpotify</a>
-                       </li>
-                   </ul>
-               </div>
-               <div class="modal-footer">
-               <button type="button" class="btn btn-primary btn-block" data-dismiss="modal">CLOSE</button>
-               </div>
-           </div>
-       </div>
-   </div>
-
-    <section id="tour" class="tour">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2  class="fadeInUp text-center"><span>Upcoming tour dates</span></h2>
-                </div>
-            </div>
-
-            <div class="row">
-                <table class="tour__table col-10 mx-auto table table-striped table-hover">
-                    <thead>
-                      <tr>
-                        <th scope="col">Date</th>
-                        <th scope="col">Event</th>
-                        <th scope="col">Place</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Fri, AUG 24</td>
-                        <td>Gagarin's Park Fest</td>
-                        <td>Ukraine, Zaporozhye</td>
-                      </tr>
-                      <tr>
-                        <td>Fri, AUG 24</td>
-                        <td>Wroclawia</td>
-                        <td>Poland, Wroclaw</td>
-                      </tr>
-                      <tr>
-                        <td>Fri, AUG 24</td>
-                        <td>Prague Castle</td>
-                        <td>Czech, Prague</td>
-                      </tr>
-                      <tr>
-                        <td>Fri, AUG 24</td>
-                        <td>Brandenburg </td>
-                        <td>Germany, Berlin</td>
-                      </tr>
-                      <tr>
-                        <td>Fri, AUG 24</td>
-                        <td> Coliseum</td>
-                        <td>Italy, Rome</td>
-                      </tr>
-                    </tbody>
-                  </table>
-            </div>   
-            
+    <footer id="footer" class="footer flex">
+        <div class="footer__logo">
+            <img src="img/logo.png" alt="Mizantropia 2018"><hr>
         </div>
-    </section>
-  
-    <footer id="footer" class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 footer__logo">
-                    <img src="img/logo.png" alt="Mizantropia 2018" class="img-fluid">
-                </div>
-                <div class="col-lg-12 footer__date text-center">
-                    &copy; Mizantropia, 
-                    <script type="text/javascript">
-                        document.write(new Date().getFullYear());
-                    </script>
-                </div>
-            </div>
+        <div class="footer__date">
+            &copy; mizantropia, 
+            <script type="text/javascript">
+                document.write(new Date().getFullYear());
+            </script>
         </div>
-    </footer>
-
+    </footer><hr>
 </body>
 </html>

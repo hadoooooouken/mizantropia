@@ -1,0 +1,22 @@
+/* Crutches */
+
+  @-moz-document url-prefix() {
+    .header__album-tracks li {
+        margin-top: -10px;
+    }
+}
+
+::selection {
+    color: $mc;
+    background: $ac1;
+}
+
+hr { 
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, $mc, $ac2, $mc);
+}
+
+.band hr {
+    height: 5px;
+}
