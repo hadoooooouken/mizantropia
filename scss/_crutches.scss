@@ -1,4 +1,5 @@
-/* Firefox Desktop prefix*/
+/* Crutches */
+
   @-moz-document url-prefix() {
     .header__album-tracks li {
         margin-top: -10px;

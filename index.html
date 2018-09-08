@@ -10,7 +10,7 @@
 
 </head>
 <body>
-
+      
     <nav id="nav" class="nav flex">
         <div class="nav__logo">
             <a href="javascript:scroll(0,0)"><img src="img/logo.png" alt="Mizantropia"></a>
@@ -18,9 +18,9 @@
         <div class="nav__menu">
             <ul>
                 <li><a href="#videos">Videos</a></li>
-                <li><a data-toggle="modal" data-target="#musicModalCenter" href="#music">Music</a></li>
+                <li><a href="#music">Music</a></li>
                 <li><a href="#band">Band</a></li>
-                <li><a data-toggle="modal" data-target="#contactModalCenter" href="#contact">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>    
         </div>
         <div class="nav__socials">
@@ -69,6 +69,23 @@
             <iframe class="videos__embed-responsive-item" src="https://www.youtube.com/embed/XPqnXUk1FGI" allowfullscreen></iframe>
         </div>
     </section>
+
+    <section id="music" class="modal">
+        <div class="modal__content">
+            <div class="modal__heading">
+                Listen to us on
+            </div><hr>
+            <div class="modal__body">
+                <div class="modal__body-music">
+                    <a href="https://itunes.apple.com/us/artist/mizantropia/611275750" target="_blank"><i class="icon-itunes"></i>&nbspiTunes</a>
+                    <a href="https://open.spotify.com/album/7JPNYm0XZDD2etb1YV72IF?nd=1" target="_blank"><i class="icon-spotify"></i>&nbspSpotify</a>
+                </div>
+            </div>
+            <div class="modal__footer">
+                <a href="#close">CLOSE</a>
+            </div>
+        </div>
+    </section>
     
     <section id="band" class="band"><hr>
         <h1><span>Band members</span></h1>
@@ -98,21 +115,37 @@
                 <span>Ekaterina Sinegina</span>
                 Vocal
             </div>
-            
+        </div>
+    </section>
+
+    <section id="contact" class="modal">
+        <div class="modal__content">
+            <div class="modal__heading">
+                contact
+            </div><hr>
+            <div class="modal__body">
+                <div class="modal__body-contact">
+                    <a href="https://m.me/130594892316" target="_blank"><i class="icon-comment"></i>&nbspm.me/130594892316</a><br />
+                    <a href="mailto:mizantropia.band@gmail.com"><i class="icon-mail-alt"></i>&nbspmizantropia.band@gmail.com</a><br />
+                    <a href="https://vk.com/mizantropiaband" target="_blank"><i class="icon-vkontakte"></i>&nbspvk.com/mizantropiaband</a>
+                </div>
+            </div>
+            <div class="modal__footer">
+                <a href="#close">CLOSE</a>
+            </div>
         </div>
     </section>
 
     <footer id="footer" class="footer flex">
         <div class="footer__logo">
-            <img src="img/logo.png" alt="Mizantropia 2018">
+            <img src="img/logo.png" alt="Mizantropia 2018"><hr>
         </div>
         <div class="footer__date">
-            &copy; Mizantropia, 
+            &copy; mizantropia, 
             <script type="text/javascript">
                 document.write(new Date().getFullYear());
             </script>
         </div>
-    </footer>
-
+    </footer><hr>
 </body>
 </html>

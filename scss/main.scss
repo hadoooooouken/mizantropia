@@ -1,8 +1,6 @@
 @import 'vars';
 @import 'fonts';
 
-/* Crutches */
-
 * { 
     box-sizing: border-box;
     margin: 0;
@@ -175,23 +173,6 @@ header {
     padding-top: 56.25%;
 }
   
-.footer {
-    align-items: center;
-    flex-direction: column;
-    font-family: $firafont;
-    font-size: 1.2em;
-    color: $ac2;
-
-    img {
-        max-width: 70px;
-        max-height: 70px;
-    }
-}
-
-.footer__date {
-    padding-bottom: 1em; 
-}
-
 /* Band section - members */
 
 .band {
@@ -210,7 +191,6 @@ header {
     color: $ac2;
     background: $mc;
     }
-    
 }
 
 .band__all {
@@ -227,20 +207,52 @@ header {
     color: $mc;
     text-align: left;
     margin-bottom: 1em;
-   
+
+    &:hover {
+        text-align: center;
+        
+        span {
+            color: $mc;
+            background: $ac2;
+            transition: all .5s ease-out;
+        }
+    }
+  
     img {
-    width: 100%;
+    width: 200px;
     border-radius: 50%;
-    border: 2px inset $ac1;
+    border: 1px solid $ac1;
     margin-bottom: 0.5em;
     filter: grayscale(80%) brightness(0.6);
 
         &:hover {
         filter: grayscale(0%);
+        transition: all 1s ease;
         }
     }
 }
 
+/* Footer */
+
+.footer {
+    align-items: center;
+    flex-direction: column;
+    font-family: $jimfont;
+    font-size: 1.5em;
+    color: $ac2;
+    margin-top: 1em;
+
+    img {
+        max-width: 70px;
+        max-height: 70px;
+    }
+}
+
+.footer__date {
+    padding-bottom: 1em; 
+}
+
 @import 'crutches';
 @import 'animations';
+@import 'modal';
 @import 'media';
