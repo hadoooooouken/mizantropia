@@ -119,6 +119,14 @@ nav img {
   max-height: 70px;
 }
 
+nav img:hover {
+  color: #e3dbad;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-filter: sepia(100%);
+          filter: sepia(100%);
+}
+
 nav a {
   font-size: 1.5em;
   font-family: "montfont", sans-serif;
@@ -356,6 +364,14 @@ header h1 {
 .footer img {
   max-width: 70px;
   max-height: 70px;
+}
+
+.footer img:hover {
+  color: #e3dbad;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-filter: sepia(100%);
+          filter: sepia(100%);
 }
 
 .footer__date {
