@@ -180,6 +180,21 @@ header {
   margin-top: 90px;
 }
 
+header a {
+  color: #e3dbad;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #c1a584;
+}
+
+header a:active {
+  color: transparent;
+  text-shadow: 1px 1px 2px #e3dbad !important;
+  background-clip: text;
+}
+
 header h1 {
   font-family: "montfont", sans-serif;
   text-transform: uppercase;
