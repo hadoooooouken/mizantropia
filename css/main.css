@@ -298,7 +298,6 @@ header h1 {
 
 .band__all {
   padding: 0 20% 0 20%;
-  /*************************/
   -ms-flex-preferred-size: 200px;
       flex-basis: 200px;
   -ms-flex-wrap: wrap;
