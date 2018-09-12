@@ -43,6 +43,7 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'UA-58372452-5');
+    setTimeout("gtag('event', 'bouncerate', {'event_category': 'ping','event_label': location.pathname})", 15000);
     </script>
 </head>
 <body>
