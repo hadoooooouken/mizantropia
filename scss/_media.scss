@@ -58,6 +58,10 @@
         }
     }
 
+    .nav__logo {
+        margin-top: 0.5em;
+    }
+
     .nav__menu {
         align-items: center;
         align-self: center;
@@ -131,6 +135,13 @@
             margin-bottom: 0.5em;
         }
 
+    }
+
+    .nav__logo {
+        width: 210px;
+        height: 210px;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
     }
 
     .nav__menu {
@@ -222,6 +233,11 @@
             max-height: 90px;
         }
     }
+
+    .footer__logo {
+        width: 90px;
+        height: 90px;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -236,4 +252,10 @@
             max-height: 160px;
         }
     }
+
+    .nav__logo {
+        width: 160px;
+        height: 160px;
+    }
+
 }
