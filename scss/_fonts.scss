@@ -1,23 +1,27 @@
 @font-face {
     font-family: 'montfont';
+    font-display: auto;
     src: url('../fonts/montserrat.woff') format('woff');
     font-weight: 700;
 }
 
 @font-face {
     font-family: 'firafont';
+    font-display: auto;
     src: url('../fonts/fira-sans.woff') format('woff');
     font-weight: 100;
 }
 
 @font-face {
     font-family: 'jimfont';
+    font-display: auto;
     src: url('../fonts/jim-nightshade.woff') format('woff');
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'fontello';
+    font-display: auto;
     src: url('../fonts/fontello.eot?73940808');
     src: url('../fonts/fontello.eot?73940808#iefix') format('embedded-opentype'),
          url('../fonts/fontello.woff2?73940808') format('woff2'),
