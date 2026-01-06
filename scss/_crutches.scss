@@ -1,11 +1,5 @@
 /* Crutches */
 
-  @-moz-document url-prefix() {
-    .header__album-tracks li {
-        margin-top: -10px;
-    }
-}
-
 ::selection {
     color: $mc;
     background: $ac1;
