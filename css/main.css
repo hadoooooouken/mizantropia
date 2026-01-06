@@ -719,12 +719,6 @@ header h1 {
 }
 
 /* Crutches */
-@-moz-document url-prefix() {
-  .header__album-tracks li {
-    margin-top: -10px;
-  }
-}
-
 ::-moz-selection {
   color: #000000;
   background: #e3dbad;
